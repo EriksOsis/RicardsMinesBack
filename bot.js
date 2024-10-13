@@ -1,4 +1,12 @@
 const { Telegraf } = require('telegraf');
+const express = require('express');
+const app = express();
+
+const PORT = process.env.PORT || 5000;  // Use PORT provided by Heroku or default to 5000 locally
+
+app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
+});
 
 // Replace 'YOUR_BOT_TOKEN' with the token provided by BotFather
 const bot = new Telegraf('7737982835:AAG9lHDZo2xX0KKcZcd677wK2qL7Tj7Hv3Q');
