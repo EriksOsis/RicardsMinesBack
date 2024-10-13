@@ -6,7 +6,7 @@ const bot = new Telegraf('7737982835:AAG9lHDZo2xX0KKcZcd677wK2qL7Tj7Hv3Q');
 // Start command handler
 bot.start((ctx) => {
   ctx.replyWithPhoto(
-    '2024-10-14 00.37.49.jpg', // Replace with your image URL
+    '2024-10-14_00.37.49.jpg', // Replace with your image URL
     {
       caption: 'Welcome To The DragosMines - AI BOT!🤖 Press "PLAY NOW" to start playing👇🏽!',
       reply_markup: {
